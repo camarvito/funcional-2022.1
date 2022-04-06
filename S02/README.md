@@ -24,7 +24,18 @@ A programação orientada a objetos pode ser definida de várias formas e vejo q
 
 As linguagens de programação mais utilizadas hoje em dia são multi-paradigma com suporte à POO. Grande parte da nossa literatura sobre engenharia de software e as boas práticas consolidadas em clareza de código e arquitetura, tem como base os princípios da orientação a objeto.
 
-[...]
+É extensamente utilizada em softwares comerciais e é apropriada para construção de uma enorme gama de sistemas.
+
+<img src="./img/Java-Code.png" alt="C Algorithm" width="500" height="500">
 
 ## Programação Funcional
+
+O paradigma de programação funcional começou a ser mais fortemente adotado recentemente, porém foi o primeiro a ser inventado. Na realidade, sua invenção antecede a própria programação de computadores. A programação funcional é resultado direto do trabalho de Alonzo Church, que em 1936 inventou o λ-calculus enquanto procurava resolver o mesmo problema matemático que Alan Turing, na mesma época. Uma noção fundamental do λ-calculus é a imutabilidade - ou seja, a noção de que as variáveis declaradas não mudam, sendo portanto constantes.
+
+O processamento de dados em linguagens funcionais ocorre por sua vez utilizando transformações (funções) sobre os dados.
+
+Atualmente temos vários cases de empresas que utilizam programação funcional nos seus produtos, em especial no Brasil algumas _Fintechs_. Podemos citar como principais vantagens, a resolução de problemas de computação paralela, como problemas de concorrência, código mais enxuto e objetivo, garantindo eventualmente uma fácil manutenção, e também simplicidade na hora de isolar funções para testes.
+
+<img src="./img/Haskell-Code.png" alt="C Algorithm" width="500" height="500">
+
 
