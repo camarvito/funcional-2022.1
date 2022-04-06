@@ -36,6 +36,6 @@ O processamento de dados em linguagens funcionais ocorre por sua vez utilizando 
 
 Atualmente temos vários cases de empresas que utilizam programação funcional nos seus produtos, em especial no Brasil algumas _Fintechs_. Podemos citar como principais vantagens, a resolução de problemas de computação paralela, como problemas de concorrência, código mais enxuto e objetivo, garantindo eventualmente uma fácil manutenção, e também simplicidade na hora de isolar funções para testes.
 
-<img src="./img/Haskell-Code.png" alt="C Algorithm" width="700" height="500">
+<img src="./img/Haskell-Code.png" alt="C Algorithm" width="900" height="500">
 
 
