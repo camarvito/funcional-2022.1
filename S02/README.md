@@ -16,8 +16,7 @@ Outros usos da instrução `goto` no entanto não tinham esse problema. Dijkstra
 
 Abordagens para construção de algoritmos de forma estruturada estão presentes em praticamente todas as linguagens de programação multi-paradigma, e de certa forma, normalmente somos ensinados a programar primeiramente em uma linguagem estruturada, como *C* ou *Pascal*. Via de regra, a programação estruturada é a forma padrão na qual construímos algoritmos.
 
-<img src="./img/C-Algorithm.png" width="200" height="200">
-*Algoritmo escrito em linguagem C.*
+<img src="./img/C-Algorithm.png" alt="C Algorithm" width="500" height="500">
 
 ## Programação Orientada a Objetos
 
