@@ -1,0 +1,1 @@
+primeiros1 xs = init xs

@@ -1,0 +1,1 @@
+divide xs = splitAt xs
