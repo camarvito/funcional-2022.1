@@ -1,0 +1,1 @@
+sequencia x y = [x | x <- [y..x + y - 1]]
