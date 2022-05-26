@@ -1,0 +1,1 @@
+myElemIndex x xs = lookup x $ zip xs [0..]

@@ -1,0 +1,1 @@
+indices v xs = map (\(x,y) -> y) $ filter (\(x,y) -> x == v) $ zip xs [0..]

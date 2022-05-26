@@ -1,0 +1,1 @@
+concatMap2 fn xs = foldr (++) [] $ map fn xs

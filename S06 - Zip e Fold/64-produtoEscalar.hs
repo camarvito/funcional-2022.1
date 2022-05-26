@@ -1,0 +1,1 @@
+produtoEscalar xs ys = sum $ map (\(x,y) -> x * y) $ zip xs ys
