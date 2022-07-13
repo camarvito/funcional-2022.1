@@ -1,9 +1,10 @@
 import Data.List
 import Data.Maybe
 
-
--- neib :: [a] -> Int -> Int -> [a]
--- neib xs index lim = ...
+neib :: [a] -> Int -> Int -> [a]
+neib xs index lim = drop lower . take upper $ xs
+    where lower = max 0 (index - lim)
+          upper = min (length xs) (index + lim + 1)
 
 -- verifica se o valor existe no vetor
 exists :: Eq a => a -> [a] -> Bool
@@ -14,16 +15,16 @@ dig2char :: (Eq a, Num a, Enum a, Show a) => a -> Char
 dig2char dig = head $ show dig
 
 -- -- verifica se esse valor pode ser inserido nesse índice
--- fit :: (String, Int) ->  Int -> Int -> Bool
--- -- fit (xs, lim) index value = ...
+fit :: (String, Int) ->  Int -> Int -> Bool
+fit (xs, lim) index value = not . exists (dig2char value) $ neib xs index lim
 
 -- pega as posições de todos os .
 getHoles :: String -> [Int]
 getHoles xs = [x | (x, i) <- zip [0..] xs, i == '.']
 
--- -- insere esse valor nesse index e retorna o novo vetor resultante
--- set :: String -> Int -> Int -> String
--- -- set xs index value = ...
+-- -- insere esse valor nesse index e retorna o novo vetor resultante PS
+set :: String -> Int -> Char -> String
+set xs index v = take index xs ++ [v] ++ drop (index + 1) xs
 
 -- -- tenta resolver o problema para essa posição
 -- -- se é possível resolver, retorna Just resposta, senão Nothing
@@ -48,13 +49,13 @@ getHoles xs = [x | (x, i) <- zip [0..] xs, i == '.']
 -- ------------------------------------------------------------------------------------
 
 
--- neibTest :: IO ()
--- neibTest = do
---     print $ neib "abcdef.." 0 2 == "abc"
---     print $ neib "abc.def"  3 1 == "c.d"
---     print $ neib "abc.def"  3 2 == "bc.de"
---     print $ neib "abc.def"  1 2 == "abc."
---     print $ neib "abc.def"  5 3 == "c.def"
+neibTest :: IO ()
+neibTest = do
+    print $ neib "abcdef.." 0 2 == "abc"
+    print $ neib "abc.def"  3 1 == "c.d"
+    print $ neib "abc.def"  3 2 == "bc.de"
+    print $ neib "abc.def"  1 2 == "abc."
+    print $ neib "abc.def"  5 3 == "c.def"
 
 dig2charTest :: IO ()
 dig2charTest = do
